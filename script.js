@@ -1,213 +1,88 @@
 const categories = [
-
   {
-
     id: "salud-fisica",
-
-    label: "Salud física y vitalidad",
-
-    low:
-
-      "Te sientes sin energía la mayor parte del tiempo, poca fuerza o resistencia. Hábitos muy desordenados (duermes mal, comes mal, casi no te mueves). Tu cuerpo te limita y afecta tu calidad de vida.",
-
-    high:
-
-      "Te sientes fuerte, con alta energía y buena vitalidad. Duermes y comes bien la mayor parte del tiempo, te mueves con constancia. Tu cuerpo te acompaña para hacer lo que quieres con vitalidad. No es un cuerpo perfecto, es tu máximo saludable ideal.",
-
+    label: "Vitalidad y Salud Física",
+    low: "Sientes agotamiento constante y tu cuerpo se siente pesado. Tus hábitos de sueño y alimentación están descuidados. Sientes que tu salud te limita en lugar de impulsarte.",
+    high: "Te sientes con energía desbordante y fuerza. Duermes reparadoramente y nutres tu cuerpo con consciencia. Tu salud es el motor que te permite disfrutar de cada día al máximo.",
     color: "#8b1538",
-
   },
-
   {
-
     id: "salud-mental",
-
-    label: "Salud mental",
-
-    shortLabel: "Salud mental",
-
-    initials: "SM",
-
-    low:
-
-      "Vives con estrés/ansiedad/tristeza o irritación constante. Te tratas muy mal por dentro. Te cuesta regular emociones y concentrarte. Te sientes en el fondo emocional la mayor parte del tiempo.",
-
-    high:
-
-      "Te sientes en paz la mayor parte del tiempo. Emocionalmente estable, con buena autoestima y autocompasión. Manejas el estrés y recuperas rápido el equilibrio. Tienes claridad mental y presencia.",
-
+    label: "Paz Mental y Equilibrio",
+    shortLabel: "Paz Mental",
+    initials: "PM",
+    low: "Vives en un estado de estrés constante o ruido mental. Te cuesta gestionar tus emociones y sientes que las preocupaciones dominan tu día a día.",
+    high: "Disfrutas de una mente clara y en calma. Gestionas los retos con resiliencia y mantienes una relación amable y compasiva contigo mismo.",
     color: "#0e5b8f",
-
   },
-
   {
-
     id: "espiritualidad",
-
-    label: "Sentido de vida y espiritualidad",
-
-    shortLabel: "Sentido vida",
-
-    initials: "SV",
-
-    low:
-
-      "Sientes vacío, desconexión o falta de propósito. Hay poca paz interna y casi nada te nutre por dentro. Te cuesta conectar con significado o valores.",
-
-    high:
-
-      "Sientes un propósito claro o una dirección que te guía. Conectas con significado, gratitud y paz interna con frecuencia. Tienes prácticas (espirituales o personales) que te nutren y te alinean.",
-
+    label: "Propósito y Sentido de Vida",
+    shortLabel: "Propósito",
+    initials: "PV",
+    low: "Sientes un vacío o falta de dirección. Te cuesta encontrar significado a tus acciones y te sientes desconectado de tus valores esenciales.",
+    high: "Sientes que tu vida tiene un porqué claro. Vives alineado con tus valores, sintiendo gratitud y una conexión profunda con algo más grande que tú.",
     color: "#2aa8c7",
-
   },
-
   {
-
     id: "pareja",
-
-    label: "Pareja y amor",
-
-    shortLabel: "Pareja",
-
-    initials: "P",
-
-    low:
-
-      "Si tienes pareja. Relación dolorosa o inexistente con mucha insatisfacción. Poco apoyo, mala comunicación, inseguridad fuerte, falta de respeto/intimidad o sensación de que estarías mejor solo.\n\nSi estás soltero. Te sientes \"cerrado\" al amor. Eliges mal constantemente o te quedas en vínculos no disponibles. Sientes que \"necesitas\" pareja para estar bien o te convenciste de que \"no puedes\" amar.",
-
-    high:
-
-      "Si tienes pareja. Te sientes amado y apoyado. Hay buena comunicación, confianza, intimidad y tiempo de calidad. Se alinean en valores y futuro, y la relación suma a tu vida.\n\nSi estás soltero: Estás bien contigo mismo y abierto a una relación. Tienes claridad de lo que buscas, límites sanos. Tomas acciones reales para conocer a alguien compatible. Te sientes capaz de amar y dejarte amar.",
-
-    color: "#63c7c2",
-
-  },
-
-  {
-
-    id: "familia",
-
-    label: "Familia",
-
-    shortLabel: "Familia",
-
-    initials: "F",
-
-    low:
-
-      "Te sientes poco apoyado, incomprendido o en conflicto constante. No puedes hablar con honestidad o hay distancia/resentimiento. Te pesa o te drena.",
-
-    high:
-
-      "Hay apoyo y respeto. Puedes comunicarte y ser tú mismo. Te sientes valorado y aportas desde un lugar sano (con límites cuando hace falta).",
-
-    color: "#6cc1a3",
-
-  },
-
-  {
-
-    id: "amigos",
-
-    label: "Amigos - Comunidad",
-
-    shortLabel: "Amigos",
-
+    label: "Amor y Relación de Pareja",
+    shortLabel: "Amor",
     initials: "A",
-
-    low:
-
-      "Te sientes solo o rodeado de relaciones superficiales/tóxicas. No tienes con quién contar o casi no inviertes tiempo en vínculos. Poco sentido de comunidad.",
-
-    high:
-
-      "Tienes amigos cercanos y confiables, te nutren y tú nutres. Hay tiempo de calidad y apoyo mutuo. Te sientes parte de una comunidad.",
-
+    low: "Si tienes pareja: Sientes desconexión, conflicto o falta de apoyo. Si estás soltero: Te sientes cerrado al amor o repites patrones que no te nutren.",
+    high: "Si tienes pareja: Disfrutas de complicidad, comunicación sana y apoyo mutuo. Si estás soltero: Te sientes pleno contigo mismo y abierto a un amor consciente y sano.",
+    color: "#63c7c2",
+  },
+  {
+    id: "familia",
+    label: "Vínculos Familiares",
+    shortLabel: "Familia",
+    initials: "F",
+    low: "Existen tensiones frecuentes, distancia emocional o falta de comunicación. El entorno familiar se siente como una carga o fuente de estrés.",
+    high: "Disfrutas de relaciones basadas en el respeto, el apoyo y la comunicación honesta. Tu familia es un refugio seguro donde puedes ser tú mismo.",
+    color: "#6cc1a3",
+  },
+  {
+    id: "amigos",
+    label: "Amistad y Comunidad",
+    shortLabel: "Amigos",
+    initials: "A",
+    low: "Te sientes solo o rodeado de relaciones superficiales. Sientes que no tienes a quién recurrir en momentos importantes.",
+    high: "Cuentas con un círculo de apoyo sólido y nutritivo. Inviertes tiempo de calidad en amistades que te inspiran y te hacen sentir parte de algo.",
     color: "#f3c04f",
-
   },
-
   {
-
     id: "trabajo",
-
-    label: "Trabajo - Misión",
-
-    low:
-
-      "Odias tu trabajo o te drena profundamente. No usas tus habilidades, no ves futuro, te sientes atrapado o desconectado. No hay crecimiento.",
-
-    high:
-
-      "Te encanta lo que haces o lo sientes alineado con tu misión. Usas tus talentos, disfrutas el ambiente y las personas. Creces, y sientes propósito en tu contribución.",
-
+    label: "Realización Profesional",
+    low: "Tu trabajo te drena y no ves propósito en lo que haces. Te sientes estancado, infravalorado o atrapado en una rutina sin sentido.",
+    high: "Te sientes realizado y motivado. Usas tus talentos para contribuir de forma significativa y sientes que tu trabajo está alineado con tu misión.",
     color: "#f1952e",
-
   },
-
   {
-
     id: "dinero",
-
-    label: "Dinero y estilo de vida",
-
-    shortLabel: "Dinero",
-
-    initials: "D",
-
-    low:
-
-      "Vives con preocupación constante por dinero, desorden financiero, deudas/estrés. No sabes en qué se va tu plata o no cubres lo básico. Tu futuro se siente frágil.",
-
-    high:
-
-      "Manejas bien tus finanzas. Te alcanza para lo importante, tienes tranquilidad y seguridad presente/futura. Tu estilo de vida es sostenible y coherente con tus prioridades.",
-
+    label: "Libertad y Estabilidad Financiera",
+    shortLabel: "Finanzas",
+    initials: "EF",
+    low: "El dinero es una fuente constante de estrés o preocupación. Vives con desorden financiero o sientes que tus finanzas limitan tus sueños.",
+    high: "Manejas tus recursos con maestría y tranquilidad. Tus finanzas te brindan seguridad y son la base para construir el estilo de vida que deseas.",
     color: "#e65461",
-
   },
-
   {
-
     id: "crecimiento",
-
-    label: "Crecimiento personal y aprendizaje",
-
-    shortLabel: "Crecimiento",
-
-    initials: "C",
-
-    low:
-
-      "Sientes estancamiento. Casi no aprendes ni avanzas en metas personales. Poca disciplina o dirección para crecer.",
-
-    high:
-
-      "Aprendes y te desarrollas constantemente, tienes metas claras y avanzas. Te sientes expandiéndote y construyendo la versión de ti que quieres.",
-
+    label: "Evolución y Crecimiento Personal",
+    shortLabel: "Evolución",
+    initials: "EP",
+    low: "Sientes estancamiento y falta de nuevos desafíos. Te cuesta salir de tu zona de confort o dedicar tiempo a tu propio desarrollo.",
+    high: "Estás en constante aprendizaje y expansión. Te desafías a crecer, superas miedos y construyes activamente la mejor versión de ti mismo.",
     color: "#b24a74",
-
   },
-
   {
-
     id: "diversion",
-
-    label: "Diversión",
-
-    low:
-
-      "Casi no hay diversión ni descanso. Todo se siente obligación/estrés. No te das tiempo para ocio o disfrute y la vida se siente pesada.",
-
-    high:
-
-      "Creas tiempo frecuente para diversión, risa y hobbies. Descansas bien, disfrutas momentos cotidianos y también espacios tipo vacaciones. Sientes que estás viviendo una vida que te gusta.",
-
+    label: "Disfrute y Recreación",
+    low: "La vida se siente como una lista interminable de deberes. Casi no hay espacio para la risa, el juego o el descanso genuino.",
+    high: "Priorizas momentos de alegría, ocio y aventura. Sabes desconectar para recargar energías y disfrutas plenamente de los placeres de la vida.",
     color: "#f07f4a",
-
   },
-
 ];
 
 
@@ -239,6 +114,7 @@ const detailedResults = document.querySelector(".detailed-results");
 const reflectionSection = document.querySelector("#reflection");
 const resultsMessage = document.querySelector("#results-message");
 const showResultsBtn = document.querySelector("#show-results");
+const downloadBtn = document.querySelector("#download-btn");
 const saveReflectionBtn = document.querySelector("#save-reflection");
 const saveReflectionMsg = document.querySelector("#save-reflection-msg");
 const avgNow = document.querySelector("#avg-now");
@@ -248,6 +124,9 @@ const lowNow = document.querySelector("#low-now");
 
 const gapTop = document.querySelector("#gap-top");
 
+const surveyProgress = document.querySelector("#survey-progress");
+const progressText = document.querySelector("#progress-text");
+
 const toggleNowBtn = document.querySelector("#toggle-now");
 
 const toggleFutureBtn = document.querySelector("#toggle-future");
@@ -256,25 +135,25 @@ const ctx = wheelCanvas.getContext("2d");
 
 const improvementReasons = {
   dinero:
-    "Al mejorar esta área, ganas tranquilidad y seguridad financiera. Te sientes más en control de tus recursos, puedes tomar mejores decisiones económicas y reducir el estrés relacionado con el dinero, lo que te permite disfrutar más de la vida y planificar con confianza tu futuro.",
+    "Al dominar tus finanzas, no solo compras tranquilidad, sino que adquieres la libertad de elegir cómo quieres vivir sin que el dinero sea un obstáculo.",
   trabajo:
-    "Cuando fortaleces esta categoría, ganas mayor sentido de propósito en tu trabajo. Aprovechas mejor tus talentos, te sientes más motivado en tu día a día y experimentas mayor satisfacción profesional, lo que impacta positivamente en tu bienestar general.",
+    "Encontrar propósito en tu labor transforma cada lunes en una oportunidad de impacto, elevando no solo tu productividad, sino tu felicidad diaria.",
   "salud-fisica":
-    "Mejorar esta área te aporta más energía, vitalidad y bienestar físico. Te sientes más fuerte, saludable y equilibrado, lo que te permite rendir mejor, prevenir enfermedades y disfrutar plenamente de tu vida diaria.",
+    "Invertir en tu vitalidad es asegurar que tu cuerpo sea el mejor aliado para alcanzar todos tus otros sueños con la energía necesaria.",
   diversion:
-    "Al desarrollar esta categoría, ganas más momentos de felicidad genuina. Aprendes a priorizar lo que te entusiasma, a gestionar mejor tu energía y a vivir con mayor ligereza, creando una vida llena de experiencias que te recargan y te hacen sentir bien.",
+    "El disfrute no es un lujo, es el combustible que mantiene tu creatividad y entusiasmo vivos. Una vida divertida es una vida que vale la pena ser vivida.",
   "salud-mental":
-    "Cuando mejoras tu salud mental, ganas claridad, enfoque y resiliencia. Manejas mejor el estrés, tomas decisiones con mayor consciencia y fortaleces tu equilibrio emocional, lo que te permite afrontar los retos con mayor calma y eficacia.",
+    "Una mente en paz es tu mayor superpoder. Te permite navegar las tormentas con calma y disfrutar de los días soleados con total presencia.",
   espiritualidad:
-    "Al fortalecer esta área, ganas una conexión más profunda contigo mismo y con lo que da sentido a tu vida. Experimentas mayor paz interior, autenticidad y propósito, lo que te ayuda a vivir de forma alineada con tus valores.",
+    "Conectar con tu propósito te da una brújula interna inquebrantable, permitiéndote vivir una vida con significado y paz profunda.",
   amigos:
-    "Mejorar esta categoría te permite construir relaciones más sólidas y significativas. Ganas apoyo emocional, confianza y un mayor sentido de pertenencia, elementos clave para una vida social enriquecedora y satisfactoria.",
+    "Tener una tribu que te sostenga y te inspire multiplica tus alegrías y divide tus penas, creando un sentido de pertenencia vital.",
   familia:
-    "Al trabajar en esta área, ganas relaciones familiares más sanas y equilibradas. Mejora la comunicación, el entendimiento mutuo y el apoyo emocional, creando un entorno familiar más estable y armonioso.",
+    "Sanar y fortalecer tus raíces familiares te da la estabilidad emocional necesaria para volar alto y alcanzar tus metas personales.",
   pareja:
-    "Cuando fortaleces esta categoría, ganas relaciones románticas más plenas y conscientes. Disfrutas de mayor conexión emocional, confianza y complicidad, construyendo vínculos afectivos alineados con tus necesidades y valores.",
+    "Un amor consciente y sano es un refugio de crecimiento mutuo, donde ambos se convierten en la mejor versión de sí mismos.",
   crecimiento:
-    "Al mejorar esta área, ganas una sensación constante de progreso y evolución. Desarrollas nuevos conocimientos y habilidades, estableces metas claras y refuerzas tu confianza para crear la vida que deseas.",
+    "Tu compromiso con tu evolución personal garantiza que nunca te conformes con menos de lo que eres capaz de ser y lograr.",
 };
 
 const SUPABASE_URL = "https://guifmmxlfjpitoeuodwl.supabase.co";
@@ -326,6 +205,7 @@ const buildQuestion = (category, index) => {
   const card = document.createElement("div");
   card.className = "question";
   card.style.setProperty("--card-accent", category.color);
+  card.style.animationDelay = `${index * 0.1}s`;
 
 
   const header = document.createElement("div");
@@ -525,13 +405,18 @@ const updateSummary = (nowScores, futureScores) => {
 
   const minNow = validNow.length ? Math.min(...validNow) : 0;
 
-  const lowestAreas = categories
-
+  const lowestAreasRaw = categories
     .filter((category, index) => nowScores[index] === minNow)
-
     .map((category) => category.label);
 
-  lowNow.textContent = minNow ? `${lowestAreas.join(", ")} (${minNow})` : "--";
+  let lowestAreasText = "";
+  if (lowestAreasRaw.length > 3) {
+    lowestAreasText = `Varias áreas (incl. ${lowestAreasRaw[0]})`;
+  } else {
+    lowestAreasText = lowestAreasRaw.join(", ");
+  }
+
+  lowNow.textContent = minNow ? `${lowestAreasText} (${minNow})` : "--";
 
 
 
@@ -1120,6 +1005,11 @@ const updateAll = () => {
     (input) => Number(input.value) > 0
   ).length;
   const total = categories.length * 2;
+
+  const percent = Math.round((answered / total) * 100);
+  if (surveyProgress) surveyProgress.style.width = `${percent}%`;
+  if (progressText) progressText.textContent = `${percent}% completado`;
+
   const completed = answered >= total;
   if (!completed) {
     state.resultsUnlocked = false;
@@ -1235,6 +1125,32 @@ if (showResultsBtn) {
 
     requestAnimationFrame(animateCards);
   });
+}
+
+const downloadWheel = () => {
+  const link = document.createElement("a");
+  const name = userNameInput.value.trim() || "mi";
+  link.download = `rueda-de-la-vida-${name}.png`;
+
+  // Create a temporary canvas to add a background (since the main one might be transparent)
+  const tempCanvas = document.createElement("canvas");
+  tempCanvas.width = wheelCanvas.width;
+  tempCanvas.height = wheelCanvas.height;
+  const tempCtx = tempCanvas.getContext("2d");
+
+  // Fill background
+  tempCtx.fillStyle = "#ffffff";
+  tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+
+  // Draw the original wheel onto the temp canvas
+  tempCtx.drawImage(wheelCanvas, 0, 0);
+
+  link.href = tempCanvas.toDataURL("image/png");
+  link.click();
+};
+
+if (downloadBtn) {
+  downloadBtn.addEventListener("click", downloadWheel);
 }
 
 if (saveReflectionBtn) {
