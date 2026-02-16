@@ -21,6 +21,10 @@ const QuizWelcome = ({ onStart }: QuizWelcomeProps) => {
         <div className="w-full max-w-lg animate-fade-in text-center space-y-8">
             <div className="space-y-4">
                 {/* Title is now handled in Quiz.tsx */}
+                <div className="flex items-center justify-center gap-2 text-primary font-medium">
+                    <span>⏱️</span>
+                    <span>Duración estimada: 5 minutos</span>
+                </div>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                     Responde estas preguntas y descubre cuál es el obstáculo invisible que está frenando tu crecimiento y cómo eliminarlo.
                 </p>
