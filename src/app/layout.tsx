@@ -3,8 +3,8 @@ import "../index.css";
 
 export const metadata = {
     metadataBase: new URL('https://Sumamara.github.io'),
-    title: "Encuesta de Productividad",
-    description: "Descubre qué bloquea tu productividad",
+    title: "Quiz: ¿Cuál es tu Bloqueo de Productividad?",
+    description: "Descubre en 5 minutos que bloquea tu productividad. Identifica tu tipo de bloqueo.",
     icons: {
         icon: [
             { url: '/Encuesta_productividad/favicon.ico' },
@@ -14,14 +14,14 @@ export const metadata = {
         apple: '/Encuesta_productividad/favicon.png',
     },
     openGraph: {
-        title: "Encuesta de Productividad",
-        description: "Descubre qué bloquea tu productividad y desbloquea tu potencial.",
+        title: "Quiz: ¿Cuál es tu Bloqueo de Productividad?",
+        description: "Descubre en 5 minutos que bloquea tu productividad. Identifica tu tipo de bloqueo.",
         images: [
             {
                 url: 'https://Sumamara.github.io/Encuesta_productividad/og_image_1771229641740.png',
                 width: 1200,
                 height: 630,
-                alt: 'Encuesta de Productividad Preview',
+                alt: 'Quiz: ¿Cuál es tu Bloqueo de Productividad? Preview',
             }
         ],
     },
