@@ -1,7 +1,8 @@
+"use client";
 
 import QuizEngine from "@/components/quiz/QuizEngine";
 
-const Quiz = () => {
+export default function Home() {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <main className="flex-1 flex flex-col items-center justify-center p-6 sm:p-12">
@@ -17,6 +18,4 @@ const Quiz = () => {
             </main>
         </div>
     );
-};
-
-export default Quiz;
+}
