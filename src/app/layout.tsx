@@ -2,6 +2,7 @@ import { Providers } from "@/components/Providers";
 import "../index.css";
 
 export const metadata = {
+    metadataBase: new URL('https://Sumamara.github.io'),
     title: "Encuesta de Productividad",
     description: "Descubre qué bloquea tu productividad",
     icons: {
