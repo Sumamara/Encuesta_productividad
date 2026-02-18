@@ -20,7 +20,7 @@ export const metadata = {
             {
                 url: '/Encuesta_productividad/og_image_1771229641740.png',
                 width: 640,
-                height: 447,
+                height: 640,
                 alt: 'Encuesta de Productividad Preview',
             }
         ],
