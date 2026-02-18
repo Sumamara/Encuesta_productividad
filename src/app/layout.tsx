@@ -19,8 +19,8 @@ export const metadata = {
         images: [
             {
                 url: 'https://Sumamara.github.io/Encuesta_productividad/og_image_1771229641740.png',
-                width: 640,
-                height: 640,
+                width: 1200,
+                height: 630,
                 alt: 'Encuesta de Productividad Preview',
             }
         ],
