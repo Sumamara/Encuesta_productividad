@@ -18,7 +18,7 @@ export const metadata = {
         description: "Descubre qué bloquea tu productividad y desbloquea tu potencial.",
         images: [
             {
-                url: '/Encuesta_productividad/og_image_1771229641740.png',
+                url: 'https://Sumamara.github.io/Encuesta_productividad/og_image_1771229641740.png',
                 width: 640,
                 height: 640,
                 alt: 'Encuesta de Productividad Preview',
